@@ -1,0 +1,121 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.45;
+}
+
+
+#jumpMenu {
+  position: fixed;
+  height: 100vh;
+  width: 15%;
+  background: darkgoldenrod
+}
+
+#jumpMenu h2 {
+  margin: 0 0 14px;
+  font-size: 35px;
+  text-align: center;
+}
+
+#jumpMenu a {
+  display: block;          
+  width: 100%;             
+  text-align: center;     
+  padding: 1px 0;         
+  margin: 10px 0;
+  color: blue;          
+  text-decoration: underline;
+}
+
+
+
+main {
+  margin-left: 15%;
+  min-height: 100vh;
+  padding-top: 10%;
+}
+
+
+main > header {
+  position: fixed;
+  top: 0;                 
+  width: 85%;                   
+  background: red;
+}
+
+
+main > header > p {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+
+main > header nav {
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+main > header nav button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+
+main > h1 {
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  color: black;
+}
+
+
+#container {
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 24px;
+  justify-content: center;
+}
+
+#container article {
+  width: 300px;         
+  padding: 16px;
+}
+
+#container article h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+#container article p {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+#container article a {
+  color: blue;
+}
+
+
+#thanks {
+  display: block;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  margin: 0;
+  padding: 18px 22px;
+  background: lightblue;
+  border: 2px solid #2d6a91;
+  font-size: 37px;
+  font-weight: 700;
+}
