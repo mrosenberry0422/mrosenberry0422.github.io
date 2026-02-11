@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.45;
+}
+ #menuItems {
+  position: fixed;
+  top: 0; left: 0;
+  width: 15%;
+  height: 100vh;
+  background: black;
+ }
+ #menuItems > button{
+  display: block;
+  width: 100%;
+  padding: 14px 10px;
+  border: none;
+  background: blue;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#menuItems > button:hover{
+  background: darkgoldenrod;
+  color: black;
+}
+
+
+#jumpMenu {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background: darkgoldenrod
+}
+
+
+#jumpMenu a {
+  display: block;          
+  width: 100%;             
+  text-align: center;     
+  color: blue;          
+  text-decoration: underline;
+}
+
+#jumpMenu a:hover{
+  background: blue;
+  color: black;
+}
+
+#recentArticles:hover + #jumpMenu, #jumpMenu:hover{
+  display: block;
+}
+
+
+main {
+  margin-left: 15%;
+  min-height: 100vh;
+  padding-top: 10%;
+}
+
+
+main > header {
+  position: fixed;
+  top: 0;
+  left: 15%;                 
+  width: 85%;                   
+  background: red;
+  z-index: 10;
+}
+
+
+main > header > p {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+main > h1 {
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  color: black;
+}
+
+
+#container {
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 24px;
+  justify-content: center;
+}
+
+#container article {
+  width: 300px;         
+  padding: 16px;
+  color: lightgray;
+  transform: scale(1);
+  transition: color 2s, transform 2s;
+}
+#container article:hover{
+  color: black;
+  transform: scale(1.06);
+}
+
+#container article h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+#container article p {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+#container article > p:first-of-type::first-letter{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+}
+
+#container article a {
+  color: blue;
+}
+
+a[href*="google.com"]::after{
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  background-image: url("differenttab.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#thanks {
+  display: block;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  margin: 0;
+  padding: 18px 22px;
+  background: lightblue;
+  border: 2px solid #2d6a91;
+  font-size: 37px;
+  font-weight: 700;
+}
