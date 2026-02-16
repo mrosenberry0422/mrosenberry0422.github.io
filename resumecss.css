@@ -1,0 +1,42 @@
+.resume{
+  display: block;              
+  padding: 16px;
+}
+
+.top, .leftcol, .rightcol{
+  width: 100%;
+}
+
+
+.top {
+    margin-bottom: 16px; 
+}
+#contact{
+    padding-top: 40px;
+}
+#statement{
+    padding-top: 120px;
+    font-weight: 800;
+}
+.leftcol{ margin-bottom: 16px; }
+
+/* ---------- DESKTOP/LAPTOP (1920px): two columns ---------- */
+@media (min-width: 900px){
+  .resume{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px;
+
+    display: grid;
+    grid-template-columns: 320px 1fr; 
+    grid-template-areas:
+      "top top"
+      "leftcol rightcol";
+    gap: 24px;
+    align-items: start;
+  }
+
+  .top{ grid-area: top; }
+  .leftcol{ grid-area: leftcol; top: 24px; }
+  .rightcol{ grid-area: rightcol; }
+}
